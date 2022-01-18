@@ -92,11 +92,13 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background:white;
+  color: darkgrey;
 }
 
 header a {
-  color: var(--light);
+  color: #64BED4;
+  font-weight: bold;
 }
 
 button {
@@ -156,6 +158,8 @@ nav a:hover {
 
 nav  li {
   cursor: pointer;
+  color: #64BED4;
+  font-weight: bold;
 }
 
 textarea {
@@ -213,6 +217,10 @@ textarea {
   margin-bottom: var(--spacing-five);
 }
 
+.my-3{
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
