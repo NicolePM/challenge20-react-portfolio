@@ -4,8 +4,8 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function Nav() {
   const  categories = [
     { name: 'portfolio', description: 'Full Stack projects I completed.' },
-    { name: 'resume', description: 'Technologies mastered' },
-    { name: 'photography', description: 'Photos Taken' }
+     { name: 'resume', description: 'Technologies mastered' }
+    // { name: 'photography', description: 'Photos Taken' }
   ];
 
   const handleClick = () => {
