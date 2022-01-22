@@ -11,8 +11,7 @@ This application displays a react portfolio that includes pictures of Full Stack
 TBA
 
 ## Built With
-HTML/CSS
-React
+React & CSS
 
 ## Usage
 Clone/Download the repo.
