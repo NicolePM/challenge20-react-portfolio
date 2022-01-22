@@ -1,49 +1,31 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from "../../utils/helpers";
+//import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    contactSelected,
-    currentCategory,
-    setContactSelected,
-  } = props;
+  //Nav tabs that I use in navigation
+  const tabs = ['About', 'Contact', 'Porfolio', 'Resume'];
 
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
-  
+
   return (
     <header data-testid="header" className="flex-row px-1">
       <h2>
-          Nicole M. React Portfolio
+        Nicole M. React Portfolio
       </h2>
       <nav>
-      <ul className="flex-row">
-      <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
+        <ul className="flex-row">
+          {tabs.map(tab => (
+            <li className="mx-2" key={tab}>
+              <a
+                href={'#' + tab.toLowerCase()}
+                // Whenever a tab is clicked on,
+                // the current page is set through the handlePageChange props.
+                onClick={() => props.handlePageChange(tab)}
+                className={
+                  props.currentPage === tab ? 'navActive' : 'nav'
+                }
               >
-                {capitalizeFirstLetter(category.name)}
-              </span>
+                {tab}
+              </a>
             </li>
           ))}
         </ul>

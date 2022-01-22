@@ -7,40 +7,31 @@ import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 
 function App() {
-const [categories] = useState([
-  {
-    name: 'portfolio',
-    description: 'Full Stack application projects',
-  },
-  { name: 'resume', description: 'Technologies mastered' },
-]);
+   // Using useState, set the default value for currentPage to 'Home'
+   const [cpage, handlePageChange] = useState('About');
 
-const [currentCategory, setCurrentCategory] = useState(categories[0]);
-const [contactSelected, setContactSelected] = useState(false);
-
-  return (
-    <div>
-       <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-     <main>
-        {!contactSelected ? (
-          <>
-            <Portfolio currentCategory={currentCategory}></Portfolio>
-            <Resume></Resume>
-            <About></About>
-          </>
-        ) : (
-            <ContactForm></ContactForm>
-          )}
-      </main>
-      <Footer></Footer>
-    </div>
-  );
-}
-
+   // The renderPage method uses a switch statement to render the appropriate current page
+  const renderPage = () => {
+    switch (cpage) {
+      case 'Contact':
+        return <ContactForm />;
+      case 'Portfolio':
+        return <Portfolio/>;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
+  
+    return (
+      <div>
+           {/* Pass the state value and the setter as props to NavTabs */}
+           <Nav cpage={cpage} handlePageChange={handlePageChange} />
+      {/* Call the renderPage function passing in the currentPage */}
+       <main>{renderPage(cpage)}</main>
+        <Footer></Footer>
+      </div>
+    );
+  }  
 export default App;
