@@ -2,14 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## Purpose
+# Purpose
 This application displays a react portfolio that includes pictures of Full Stack Web Applications that were made by Nicole Mitchell
+![image](https://user-images.githubusercontent.com/42381063/150653590-6568dc96-e564-4c8c-8bdc-9ea8f3a1685d.png)
 
-## Website
+
+# Website
 TBA
 
-## Built With
-HTML/CSS
+# Built With
+HTML
+CSS
 React
 
 ## Usage
