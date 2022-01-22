@@ -374,6 +374,12 @@ footer li:hover ~ li p {
   flex-basis: 100%;
   flex: 1;
 }
+.p-r{
+  padding-right: 90px;
+}
+.b-c{
+  background-color: #64BED4;
+}
 .display{
   height: 150px;
   width: 200px;
