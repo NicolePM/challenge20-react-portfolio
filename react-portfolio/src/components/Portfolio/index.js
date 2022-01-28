@@ -4,12 +4,11 @@ import PhotoList from '../PhotoList';
 
 
 function Portfolio(props) {
-    const { currentCategory } = props;
+  //  const { currentCategory } = props; Not needed due to category having the same name
     return (
       <section data-testid="portfolio">
         <h1 data-testid="h1tag">Full Stack Application Projects</h1>
-        <p>{currentCategory.description}</p>
-        <PhotoList category={currentCategory.name} />
+        <PhotoList category="portfolio" />
       </section>
     );
 }

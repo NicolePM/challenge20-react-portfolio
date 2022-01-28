@@ -23,7 +23,7 @@ function App() {
         return <About />;
     }
   };
-  
+  console.log(cpage);
     return (
       <div>
            {/* Pass the state value and the setter as props to NavTabs */}

@@ -4,11 +4,12 @@ import cssphoto from "../../assets/code/css.PNG";
 import sqlphoto from "../../assets/code/sql.PNG";
 import nphoto from "../../assets/code/nd.PNG";
 import rephoto from "../../assets/code/re.PNG";
+import resume from "../../assets/resume/NMitchellResume.pdf"
 
 function Resume() {
     return (
         <section data-testid="resume">
-            <div><a href="../../assets/resume/NMitchellResume.pdf">Download Resume</a></div>
+            <div><a href={resume}>Download Resume</a></div>
             <div className="row">
                 <div className="column">
                     <div className="display">

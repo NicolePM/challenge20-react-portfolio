@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 function Nav(props) {
   //Nav tabs that I use in navigation
-  const tabs = ['About', 'Contact', 'Porfolio', 'Resume'];
+  const tabs = ['About', 'Contact', 'Portfolio', 'Resume'];
 
 
   return (
