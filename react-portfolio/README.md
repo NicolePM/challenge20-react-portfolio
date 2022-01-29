@@ -4,13 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Purpose
 This application displays a react portfolio that includes pictures of Full Stack Web Applications that were made by Nicole Mitchell
+![image](https://user-images.githubusercontent.com/42381063/150653590-6568dc96-e564-4c8c-8bdc-9ea8f3a1685d.png)
+
 
 ## Website
 TBA
 
 ## Built With
-HTML/CSS
-React
+React & CSS
 
 ## Usage
 Clone/Download the repo.
