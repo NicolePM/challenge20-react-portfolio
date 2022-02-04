@@ -20,6 +20,9 @@ Change the values in src/App.js to suit your use-case.
 Run npm start to spin the up the local dev server port 3000.(http://localhost:3000).
 Make required changes in src/App.js to suit your needs.
 
+## Contributors
+Nicole Mitchell https://github.com/NicolePM/challenge20-react-portfolio/
+
 ## Available Scripts
 
 In the project directory, you can run:
